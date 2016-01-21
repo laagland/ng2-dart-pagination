@@ -1,0 +1,11 @@
+pubspec.lock
+packages
+**/.packages
+.pub
+.idea
+.sass-cache
+**/.DS_Store
+.DS_Store
+lib/bower
+node_modules
+build
