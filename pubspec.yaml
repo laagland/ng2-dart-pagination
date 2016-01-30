@@ -1,7 +1,8 @@
-name: ng2-dart-pagination
-version: 0.0.1
+name: ng2_dart_pagination
+version: 0.0.1-alpha.1
 description: >
   Pagination for Angular2 Dart
+  Dart port of ng2-pagination, see http://michaelbromley.github.io/ng2-pagination/
 author: Louis Laagland <louis@wunderful.nl>
 environment:
   sdk: '>=1.12.0 <2.0.0'
@@ -10,6 +11,7 @@ dependencies:
   angular2: '^2.0.0-beta.0'
   dart_to_js_script_rewriter: ^0.1.0
 dev_dependencies:
+  guinness: ">=0.1.5 <0.2.0"
   test: '>=0.6.0 <0.13.0'
 transformers:
 - angular2:
