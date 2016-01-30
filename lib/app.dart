@@ -1,7 +1,8 @@
 library ng2_pagination_demo;
 
-import 'dart:html';
+@MirrorsUsed(targets: "ng2_pagination_demo.DemoApp")
 import 'dart:mirrors';
+import 'dart:html';
 import 'dart:math';
 
 //angular2

@@ -1,7 +1,9 @@
 library ng2_pagination;
 
-import 'dart:async';
+@MirrorsUsed(targets: 'ng2_pagination.IPaginationInstance')
 import 'dart:mirrors';
+import 'dart:async';
+
 
 //angular2
 import 'package:angular2/angular2.dart';
