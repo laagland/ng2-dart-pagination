@@ -30,7 +30,7 @@ class PaginatePipe {
 
         // for non-array types, throw an exception
         if (!(collection is List)) {
-            throw('PaginationPipe: Argument error - expected an array, got ${reflect(collection).type.reflectedType.toString()}');
+            throw('PaginationPipe: Argument error - expected an array.');
         }
 
         bool usingConfig = args[0] is IPaginationInstance;
@@ -80,7 +80,7 @@ class PaginatePipe {
                 totalItems: args[0].totalItems ?? collection.length
             );
         } else {
-            throw('PaginatePipe: Argument must be a string, number or an object. Got ${reflect(args[0]).type.reflectedType.toString()}');
+            throw('PaginatePipe: Argument must be a string, number or an object.');
         }
         return instance;
     }
