@@ -19,4 +19,4 @@ part 'demo/advanced-example-cmp.dart';
 part 'demo/string-filter-pipe.dart';
 
 //injectables
-const List<Type> injectables = const [PaginationService, PaginationControlsCmp];
+const List<Type> injectables = const [PaginationService];
