@@ -48,7 +48,11 @@ class PaginatePipe {
         if (!serverSideMode && collection is List) {
             itemsPerPage = itemsPerPage ?? LARGE_NUMBER;
             start = (this.service.getCurrentPage(id) - 1) * itemsPerPage;
-            end = start + itemsPerPage;
+            if (instance.totalItems < ((this.service.getCurrentPage(id) * itemsPerPage) - 1)){
+                end = instance.totalItems;
+            } else {
+                end = start + itemsPerPage;
+            }
 
             bool isIdentical = this.stateIsIdentical(id, collection, start, end);
             if (isIdentical) {
