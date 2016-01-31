@@ -15,8 +15,7 @@ dev_dependencies:
   test: '>=0.6.0 <0.13.0'
 transformers:
 - angular2:
+    platform_directives:
+    - 'package:angular2/common.dart#CORE_DIRECTIVES'
+    - 'package:angular2/common.dart#FORM_DIRECTIVES'
     entry_points: web/index.dart
-- dart_to_js_script_rewriter
-- $dart2js:
-    environment:
-      PROD: "true"
