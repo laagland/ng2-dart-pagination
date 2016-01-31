@@ -21,8 +21,8 @@ class DemoApp implements OnInit {
     ngOnInit() {
         this.meals = this.generateMeals();
         //TODO: implement
-            this.loadCodeSnippet('basicCode', 'packages/ng2_dart_pagination/demo/basic-example-cmp.html');
-            this.loadCodeSnippet('advancedCode', 'packages/ng2_dart_pagination/demo/advanced-example-cmp.html');
+//            this.loadCodeSnippet('basicCode', 'packages/ng2_dart_pagination/demo/basic-example-cmp.html');
+//            this.loadCodeSnippet('advancedCode', 'packages/ng2_dart_pagination/demo/advanced-example-cmp.html');
 //            this.loadCodeSnippet('customTemplateCode', 'demo/custom-template-example-cmp.html');
     }
 
