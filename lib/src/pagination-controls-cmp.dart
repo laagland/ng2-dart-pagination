@@ -139,6 +139,7 @@ class PaginationControlsCmp implements OnInit, OnDestroy, OnChanges, AfterConten
     List<IPage> createPageList(num currentPage, num itemsPerPage, num totalItems, dynamic paginationRange) {
         // paginationRange could be a string if passed from attribute, so cast to number.
         paginationRange = (paginationRange is String) ? int.parse(paginationRange) : paginationRange;
+        if(paginationRange == null) paginationRange = 1;
         List<IPage> pages = [];
         num totalPages = (totalItems / itemsPerPage).ceil();
         num halfWay = (paginationRange / 2).ceil();
