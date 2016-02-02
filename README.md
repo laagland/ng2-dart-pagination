@@ -19,7 +19,7 @@ import 'dart:async';
 import 'package:angular2/angular2.dart';
 import 'package:ng2-dart-pagination/src/ng2-pagination.dart';
 
-@Component({
+@Component(
     selector: 'my-component',
     template: '''
     <ul>
@@ -28,19 +28,19 @@ import 'package:ng2-dart-pagination/src/ng2-pagination.dart';
                
     <pagination-controls></pagination-controls>
     ''',
-    directives: [CORE_DIRECTIVES, PaginationControlsCmp],
-    pipes: [PaginatePipe],
-    providers: [PaginationService]
-})
+    directives: const [CORE_DIRECTIVES, PaginationControlsCmp],
+    pipes: const [PaginatePipe],
+    providers: const [PaginationService, DataService]
+)
 
-class MyComponent {
+class MyComponent implements OnInit {
 
     List<dynamic> collection = [];
     DataService dataService;
 
     MyComponent(this.dataService);
 
-    ngInit() {
+    ngOnInit() {
       getList();
     }
     
