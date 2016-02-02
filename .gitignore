@@ -11,3 +11,4 @@ node_modules
 build
 lib/demo/custom-template-example-cmp.dart
 lib/demo/custom-template-example-cmp.html
+npm-debug.log
