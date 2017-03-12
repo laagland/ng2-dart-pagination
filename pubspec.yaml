@@ -9,7 +9,7 @@ environment:
 dependencies:
   browser: '^0.10.0'
   angular2: '^2.0.0-beta.0'
-  dart_to_js_script_rewriter: ^0.1.0
+  dart_to_js_script_rewriter: ^1.0.1
 dev_dependencies:
   guinness: ">=0.1.5 <0.2.0"
   test: '>=0.6.0 <0.13.0'

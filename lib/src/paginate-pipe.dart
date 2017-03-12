@@ -30,7 +30,8 @@ class PaginatePipe {
 
         // for non-array types, throw an exception
         if (!(collection is List)) {
-            throw('PaginationPipe: Argument error - expected an array.');
+            throw('PaginationPipe: Argument error - expected an array, got ${collection
+                .runtimeType.toString()}');
         }
 
         bool usingConfig = args[0] is IPaginationInstance;
